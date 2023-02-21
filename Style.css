@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+#navbar a{
+    color:white ;
+    font-weight: 550;
+    
+}
+#navbar a:hover{
+    color: rgb(0, 255, 234);
+}
+#content h6{
+    font-size: large;
+    font-weight: 570;
+    letter-spacing: 1px;
+}
+#content h5{
+    font-weight: bolder;
+    font-size: 50px;
+}
+#content i{
+    color: aqua;
+    border: 2px solid aqua;
+    border-radius: 20px;
+    padding: 5px;
+    margin-right: 2px;
+}
+#content a{
+   padding-left: 2px;
+   border-radius: 20px;
+   margin-right: 7px;
+}
+#content i:hover{
+    background: aqua;
+    color: black;
+}
+#cv{
+    background: aqua;
+    border: solid aqua;
+    border-radius: 25px;
+    padding: 4px;
+    font-size: 15px;
+font-weight: 700;
+width: 30%;
+box-shadow: 0 0 6px aqua;
+}
+.image{
+    background: rgb(51, 174, 174);
+   border-radius: 15px;
+    border: 2px solid aqua;
+width: 50%;
+height: 76%;
+transform: rotate(45deg);
+position: relative;
+margin: auto;
+top: 10%;
+box-shadow: 0 0 10px aqua;
+}
+#boy{
+    top: -25%;
+    position: relative;
+left: 5%;
+    transform: rotate(-45deg);
+}
+#about{
+    color: white;
+    border: 2px solid aqua;
+    box-shadow: 0 0 15px aqua;
+    border-radius: 15px;
+    margin-top: 10%;
+    padding-bottom: 10%;
+}
+#aboutme{
+    padding-top: 10%;
+    margin-top: 15%;
+    color: aqua;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+#myprofile
+{
+    margin-top: 10%;
+   margin-left: 27%;
+    background: rgba(60, 186, 206, 0.3) ;
+    border: 2px solid aqua;
+    border-radius: 20px;
+    box-shadow: 0 0 14px aqua;
+}
+#skillpro{
+    padding-top: 5%;
+    margin-top:13%;
+    color: aqua;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+#skills{
+    margin-top: 5%;
+    border: 2px solid aqua;
+    box-shadow: 0 0 15px aqua;
+    border-radius: 15px;
+}
+.progress{
+    width: 50%;
+    margin-left: 15%;
+    margin-bottom: 2%;
+}
+#skills h6{
+    margin-left: 15%;
+    color: white;
+    padding-top: 1%;
+}
+ #project{
+    margin-top: 15%;
+ }
+ .inner{
+    overflow: hidden;
+ }
+ .inner img{
+    transition: all .7s ease;
+}
+ #project img:hover{
+transform: scale(1.1);
+background-color: linear-gradient(rgba(0,0,0,0.6)red);
+
+ }
+ #project i{
+    font-size: 135%;
+    color: rgb(247, 247, 247);
+    position: relative;
+    top:-150px ;
+left: 360px;
+}
+
