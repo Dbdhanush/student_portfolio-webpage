@@ -6,91 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="Style.css">
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/fontawesome6.2.1/css/all.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./fontawesome6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
-<body style="background: rgb(41, 41, 41);">
-    <nav class="navbar navbar-expand-lg text-white" id="navbar">
+<body>
+    <nav class="navbar navbar-expand-lg text-white fixed-top" id="navbar">
         <a class="navbar-brand" href="#">Portfolio</a>
+        
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa-solid fa-bars text-white"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <i class="fa-solid fa-bars text-dark"></i>
+        </button>       
+         
+        <div class="collapse navbar-collapse text-center" id="navbarNavDropdown">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item animate__animated animate__slideInUp" style="animation-delay:.5s;">
+            <li class="nav-item active">
               <a class="nav-link " href="#navbar">Home</a>
             </li>
-            <li class="nav-item animate__animated animate__slideInUp" style="animation-delay:.6s;">
+            <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
             </li>
-            <li class="nav-item animate__animated animate__slideInUp" style="animation-delay:.7s;">
-                <a class="nav-link" href="#skillpro">Skills</a>
+            <li class="nav-item ">
+                <a class="nav-link" href="#skills">Skills</a>
               </li>
-            <li class="nav-item animate__animated animate__slideInUp" style="animation-delay:.8s;">
+            <li class="nav-item ">
               <a class="nav-link" href="#project">projects</a>
             </li>
-            <li class="nav-item animate__animated animate__slideInUp" style="animation-delay:.9s;">
+            <li class="nav-item">
               <a class="nav-link " href="#" > Why Hire Me?</a>
             </li>
+            <li class="nav-item"><i class="fa-solid fa-sun text-dark nav-link" id="darkmood"></i></li>
           </ul>
         </div>
+        
       </nav>
-<div class="container text-light" id="content" style="margin-top: 15%;">
+   
+      <!--intro section-->
+<div class="container mt-5 pt-5 pl-3" id="content">
     <div class="row">
-       <div class="col-md-6 col-sm-12 ">
-<h6 class="animate__animated animate__slideInLeft" style="animation-delay:.1s;">Hello,It's Me</h6>
-<h5 class="animate__animated animate__slideInRight" style="animation-delay:.1s;">Dhanush</h5>
-<h6 class="animate__animated animate__slideInLeft" style="animation-delay:.1s;">And I'm a <span style="color: aqua;">Frontend Developer</span></h6>
-<p class="animate__animated animate__slideInRight" style="animation-delay:.1s;">I'm a fresher looking for <span style="color: aqua;">Good Oppertunity.</span></p>
-<a href="https://github.com/Dbdhanush" ><i class="fa-brands fa-github animate__animated animate__slideInUp" style="animation-delay:.1s;"></i></a>
-<a href="https://www.linkedin.com/in/dhanush-k-518b60231" ><i class="fa-brands fa-linkedin-in animate__animated animate__slideInUp" style="animation-delay:.1s;"></i></a>
-<a href="https://twitter.com/BangxClutchgod?t=P8cy2UosrcWj_HSvwPb5hA&s=08"><i class="fa-brands fa-twitter animate__animated animate__slideInUp" style="animation-delay:.1s;"></a></i>
+       <div class="col-12 col-md-12 col-sm-12 ">
+<h6>Hello,It's Me</h6>
+<h5>Dhanush</h5>
+<h6>And I'm a <span >Frontend Developer</span></h6>
+<p>I'm a fresher looking for <span>Good Oppertunity.</span></p>
+<a href="https://github.com/Dbdhanush" ><i class="fa-brands fa-github"></i></a>
+<a href="https://www.linkedin.com/in/dhanush-k-518b60231" ><i class="fa-brands fa-linkedin-in"></i></a>
+<a href="https://twitter.com/BangxClutchgod?t=P8cy2UosrcWj_HSvwPb5hA&s=08"><i class="fa-brands fa-twitter"></a></i>
      <br>
-        <a href="" class="btn mt-4 animate__animated animate__zoomInUp" style="animation-delay:.8s;" id="cv">Download CV</a>
+        <a href="" class="btn mt-4 " id="cv">Download CV</a>
 </div>
-       <div class="col-md-6 col-sm-12">
-       <div class="image">
-        <img src="/images/mypicture3-removebg-preview.png"  alt="" width="250" height="350" id="boy">
-       </div>
     </div>
     </div>
-</div>
 
 <!--About me-->
 
-<h3 class="text-center" id="aboutme" data-aos="fade-left">ABOUT ME</h3>
-<div class="container justify-content-center"id="about" style="width: 80%;">
-    <h5 class="pb-3 pt-4 text-center">Java & Web Devoloper</h5>
+
+<div class="container-fluid justify-content-center pb-5"id="about"> 
+  <h3 class="text-center text-primary" data-aos="zoom-up">ABOUT ME</h3>
+  <h5 class="pb-3 pt-4 text-center text-dark">Software Developer</h5>
 <div class="row ">
-    <div class="col-md-4  col-lg-4 col-sm-12">
+    <div class="col-md-6  col-lg-6 col-sm-12 d-flex justify-content-center align-items-center">
         <img src="/images/mypicture3-removebg-preview.png" width="220" alt="" id="myprofile">
     </div>
-    <div class="col-md-4 col-lg-4 col-sm-6 mt-5 pt-4">
+    <div class="col-md-6 col-lg-6 col-sm-12 mt-2 pt-4">
         
         <h6 class="pt-3 pl-4">Name: K.Dhanush</h6>
         <h6 class="pt-3 pl-4">Degree: B.sc.Computer Science</h6>
         <h6 class="pt-3 pl-4">Phone: +91-90801096664</h6>
         <h6 class="pt-3 pl-4">Address: Vellore</h6>
-   <a href="mailto:dhanushprofo@gamil.com">
-        <button class="mt-4 ml-4" style="box-shadow: 0 0 4px aqua; color: black; background: aqua; width: 40%; border-radius: 10px; border:1px solid transparent; font-weight: 600;">Hire Me</button>
-    </a>
-    </div>
-        <div class="col-md-4 col-sm-6 mt-5 pt-4">
-        <h6 class="pt-3 pl-4">Birthday: 09-02-2002</h6>
         <h6 class="pt-3 pl-4">Experience: Fresher</h6>
         <h6 class="pt-3 pl-4">Email: dhanushprofo@gmail.com</h6>
-        </div>
+        <a href="mailto:dhanushprofo@gamil.com">
+          <button class="mt-4 ml-4 btn ">Hire Me</button>
+    </a>
+    </div>
         </div>
     </div>
 
-    <!--Skills-->
-
+    <!--Skills--> 
     
-    <h3 class="text-center" data-aos="fade-left" id="skillpro">SKILLS</h3>
-<div class="container  w-75 text-light" id="skills" >
-             <h6>HTML</h6>
+<div class="container-fluid text-dark d-flex justify-content-center" id="skills">
+  <div class="progressbar ">
+    <h3 class="mb-5 mt-3 text-center" data-aos="fade-left" >SKILLS</h3>
+  <h6>HTML</h6>
             <div class="progress" data-aos="fade-right">
                 <div class="progress-bar progress-bar-animated progress-bar-striped bg-primary" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
               </div><br>
@@ -111,7 +110,7 @@
                 <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
               </div>
 </div>
-
+</div>
       <!--Projects-->
 
       <div class="container " id="project">
@@ -152,8 +151,9 @@
 
 
     <!--JS Script-->
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
 <!--aos script-->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
