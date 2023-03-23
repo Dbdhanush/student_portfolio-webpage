@@ -34,8 +34,11 @@ html{
     font-weight: 600;
     font-size: 14px;
 }
-#toggler.fa-moon{
-    color: rgb(255, 254, 254);
+#darkmood.fa-moon{
+    color:white;
+}
+#darkmood.fa-sun{
+color: black;
 }
 #navbarNavDropdown a:hover{
     color: black;
