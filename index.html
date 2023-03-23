@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg text-white fixed-top" id="navbar">
+    <nav class="navbar navbar-expand-lg text-white" id="navbar">
         <a class="navbar-brand" href="#">Portfolio</a>
         
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,7 +22,7 @@
         <div class="collapse navbar-collapse text-center" id="navbarNavDropdown">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link " href="#navbar">Home</a>
+              <a class="nav-link " href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
@@ -33,10 +33,11 @@
             <li class="nav-item ">
               <a class="nav-link" href="#project">projects</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#" > Why Hire Me?</a>
+            <li class="nav-item" >
+              <div class="toggle" id="toggler">
+              <i class="fa-solid fa-sun text-dark nav-link" id="darkmood"></i>
+            </div>
             </li>
-            <li class="nav-item"><i class="fa-solid fa-sun text-dark nav-link" id="darkmood"></i></li>
           </ul>
         </div>
         
@@ -45,16 +46,20 @@
       <!--intro section-->
 <div class="container mt-5 pt-5 pl-3" id="content">
     <div class="row">
-       <div class="col-12 col-md-12 col-sm-12 ">
+        <div class="col-12 col-md-6 col-lg-6 col-sm-12 ">
+          <img src="./images/illustrator1-removebg-preview.png" alt="" width="400px">
+        </div>
+
+       <div class="col-12 col-md-6 col-lg-6 col-sm-12 ">
 <h6>Hello,It's Me</h6>
 <h5>Dhanush</h5>
-<h6>And I'm a <span >Frontend Developer</span></h6>
-<p>I'm a fresher looking for <span>Good Oppertunity.</span></p>
+<h6>I'm a <span >Frontend Developer</span></h6>
+<p>And I'm a fresher looking for <span>Good Oppertunity.</span></p>
 <a href="https://github.com/Dbdhanush" ><i class="fa-brands fa-github"></i></a>
 <a href="https://www.linkedin.com/in/dhanush-k-518b60231" ><i class="fa-brands fa-linkedin-in"></i></a>
 <a href="https://twitter.com/BangxClutchgod?t=P8cy2UosrcWj_HSvwPb5hA&s=08"><i class="fa-brands fa-twitter"></a></i>
      <br>
-        <a href="" class="btn mt-4 " id="cv">Download CV</a>
+        <a href="./resumme/DHANUSH_RESUME.pdf" class="btn mt-4 " id="cv" download>Download CV</a>
 </div>
     </div>
     </div>
@@ -63,31 +68,33 @@
 
 
 <div class="container-fluid justify-content-center pb-5"id="about"> 
+  <div class="container about">
   <h3 class="text-center text-primary" data-aos="zoom-up">ABOUT ME</h3>
   <h5 class="pb-3 pt-4 text-center text-dark">Software Developer</h5>
 <div class="row ">
-    <div class="col-md-6  col-lg-6 col-sm-12 d-flex justify-content-center align-items-center">
+    <div class="col-md-6  col-lg-6 col-sm-12 d-flex justify-content-center align-items-center pt-4">
         <img src="/images/mypicture3-removebg-preview.png" width="220" alt="" id="myprofile">
     </div>
     <div class="col-md-6 col-lg-6 col-sm-12 mt-2 pt-4">
         
-        <h6 class="pt-3 pl-4">Name: K.Dhanush</h6>
-        <h6 class="pt-3 pl-4">Degree: B.sc.Computer Science</h6>
-        <h6 class="pt-3 pl-4">Phone: +91-90801096664</h6>
-        <h6 class="pt-3 pl-4">Address: Vellore</h6>
-        <h6 class="pt-3 pl-4">Experience: Fresher</h6>
-        <h6 class="pt-3 pl-4">Email: dhanushprofo@gmail.com</h6>
+        <h6 class="pt-3 pl-4"><span class="text-primary">Name :</span> K.Dhanush</h6>
+        <h6 class="pt-3 pl-4"><span class="text-primary">Degree:</span> B.sc.Computer Science</h6>
+        <h6 class="pt-3 pl-4"><span class="text-primary">Phone:</span> +91-90801096664</h6>
+        <h6 class="pt-3 pl-4"><span class="text-primary">Address:</span> Vellore</h6>
+        <h6 class="pt-3 pl-4"><span class="text-primary">Experience:</span> Fresher</h6>
+        <h6 class="pt-3 pl-4"><span class="text-primary">Email:</span> dhanushprofo@gmail.com</h6>
         <a href="mailto:dhanushprofo@gamil.com">
-          <button class="mt-4 ml-4 btn ">Hire Me</button>
+          <button class="mt-4 ml-4 btn " type="button">Hire Me</button>
     </a>
     </div>
         </div>
+      </div>
     </div>
 
     <!--Skills--> 
     
 <div class="container-fluid text-dark d-flex justify-content-center" id="skills">
-  <div class="progressbar ">
+  <div class="progressbar">
     <h3 class="mb-5 mt-3 text-center" data-aos="fade-left" >SKILLS</h3>
   <h6>HTML</h6>
             <div class="progress" data-aos="fade-right">
@@ -112,33 +119,30 @@
 </div>
 </div>
       <!--Projects-->
-
-      <div class="container " id="project">
-        <h3 class="text-center" style="color: aqua; font-weight: 600;">MY PROJECTS</h3>
+     
+      <div class="container-fluid pb-5 " id="project">
+        <h3 class="">MY PROJECTS</h3>
+        <div class="container mt-4 pb-5  d-flex justify-content-center align-items-center" >
         <div class="row">
-            <div class="col-md-6 col-sm-12 mt-5">
-        <div class="card bg-dark text-white"  data-aos="flip-left" style="width: 28rem; border: 2px solid aqua;   box-shadow: 0 0 15px aqua;">
-        <div class="inner">
-            <img src="/images/Screenshot (4).png" class="card-img" alt="">
-         </div>
+            <div class="col-md-6 col-sm-12 mt-5" >
+        <div class="card " style="width: 18rem; height: 20rem;" id="card">
+            <img src="/images/Screenshot (6).png" class="card-img-top" alt="">
             <div class="card-body">
              <h5 class="card-title">Student Portfolio</h5>
-             <p class="card-text text-justify">It is a Bootstrap based project where you can see my details.</p>
-   <a href="">
+             <p class="card-text text-muted">It is a Bootstrap based project where you can see my details.</p>
+   <a class="text-decoration-none" href="https://dbdhanush.github.io/student_portfolio-webpage/">Live Demo
     <i class="fa-solid fa-arrow-up-right-from-square"></i>
    </a>
             </div>
 </div>
 </div>
-            <div class="col-md-6 col-sm-12 mt-5">
-                <div class="card bg-dark text-white"  data-aos="flip-right" style="width: 28rem; border: 2px solid aqua;   box-shadow: 0 0 15px aqua;">
-                    <div class="inner">
-                    <img src="/images/Screenshot (5).png" class="card-img" alt="">
-                </div>
+            <div class="col-md-6 col-sm-12 mt-5" >
+                <div class="card" style="width: 18rem; height: 20rem;" id="card">
+                    <img src="/images/Screenshot (7).png" class="card-img-top" alt="">
                     <div class="card-body">
-                         <h5 class="card-title">Axis Micro</h5>
-                         <p class="card-text text-justify">It is a Bootstrap based project where you can see the company manufacturing product details.</p>
-                         <a href="">
+                         <h5 class="card-title">Fashion Zone</h5>
+                         <p class="card-text text-muted">It is a E-Commerce website where you can just see some products and </p>
+                         <a  class="text-decoration-none" href="https://dbdhanush.github.io/E-Commerce_websit/">Live Demo 
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
                            </a>
                         </div>
@@ -146,9 +150,8 @@
             </div>
         </div>
       </div>
-      
-
-
+      </div>
+    
 
     <!--JS Script-->
     <script src="index.js"></script>
