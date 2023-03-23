@@ -79,14 +79,14 @@ color: black;
     }
     .card{
         position: relative;
-        left: -80%;
+        left: -40%;
        }
 }
 @media screen and (max-width:425px)
 {
     .card{
         position: relative;
-        left: -80%;
+        left: -40%;
        }
        #content{
            width: 100%;
