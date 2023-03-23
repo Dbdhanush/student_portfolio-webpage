@@ -3,6 +3,7 @@ const body =document.querySelector('body');
 const content =document.querySelector('h5');
 const h6 =document.querySelector('h6');
 const a =document.querySelector('a');
+const button = document.querySelector('button');
 toggler.addEventListener('click', function(){
     toggler.classList.toggle('fa-moon');
     if(toggler.classList.toggle('fa-sun'))
@@ -13,6 +14,7 @@ toggler.addEventListener('click', function(){
         content.style.color='black';
         a.style.color='blue';
         h6.style.color='black';
+        button.style.color='black';
     }
     else{
         {
@@ -22,6 +24,7 @@ toggler.addEventListener('click', function(){
             content.style.color='white';
             a.style.color='white';
             h6.style.color='white';
+            button.style.color='white';
         }
     }
 })
