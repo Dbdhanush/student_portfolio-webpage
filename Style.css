@@ -174,10 +174,13 @@ color: rgb(0, 60, 255);
 }
 #myprofile
 {
-    border: 2px solid rgb(0, 60, 255);
-    border-radius: 20px 80px;
-    box-shadow: 0 0 14px rgb(0, 60, 255);
+    height: 250px;
+    width: 250px;
+    border: 2px solid transparent(0, 60, 255);
+    border-radius:50%;
+    box-shadow: 0 0 4px rgb(0, 60, 255);
 }
+
 #skills{
     padding-top: 5%;
     margin-top:13%;
